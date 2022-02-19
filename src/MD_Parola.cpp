@@ -69,6 +69,16 @@ void MD_Parola::begin(uint8_t numZones)
   setInvert(false);
 }
 
+void MD_Parola::restart(void)
+{
+	_D.restart();
+}
+
+void MD_Parola::softRestart(void)
+{
+	_D.softRestart();
+}
+
 bool MD_Parola::setZone(uint8_t z, uint8_t moduleStart, uint8_t moduleEnd)
 {
   if ((moduleStart <= moduleEnd) && (moduleEnd < _numModules) && (z < _numZones))

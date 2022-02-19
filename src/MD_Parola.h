@@ -1241,6 +1241,10 @@ public:
    */
   void begin(void) { begin(1); };
 
+	void restart(void);
+
+	void softRestart(void)
+
   /**
    * Initialize the object.
    *
